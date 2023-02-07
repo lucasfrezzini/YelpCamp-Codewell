@@ -1,9 +1,20 @@
-
+import "./App.css";
+import Button from "./components/Button";
+import Header from "./components/Header";
+import TopAlert from "./components/TopAlert";
 
 function App() {
   return (
-    <h1>App</h1>
+    <>
+      <Header />
+      <Button
+        title={"View Campgrounds"}
+        colors
+        width
+        icon
+      />
+    </>
   );
 }
 
-export default App; 
+export default App;
