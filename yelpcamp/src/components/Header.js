@@ -7,6 +7,7 @@ export default function Header(props) {
   const handleNavbarMobile = () => {
     const navbarMobile = document.querySelector(".navbar-mobile");
     navbarMobile.classList.toggle("hidden");
+    navbarMobile.classList.toggle("flex");
   };
 
   return (
@@ -28,7 +29,10 @@ export default function Header(props) {
         </a>
       </div>
       <div className="flex items-center">
-        <button onClick={handleNavbarMobile} className="rounded p-2 lg:hidden">
+        <button
+          onClick={handleNavbarMobile}
+          className="rounded bg-gray-200 p-2 lg:hidden"
+        >
           <img src={icon_menu} />
         </button>
         <a href="#" className="text-gray-600 mx-4 hidden lg:block">
@@ -40,7 +44,7 @@ export default function Header(props) {
           colors
         />
       </div>
-      <div className="navbar-mobile bg-white flex flex-col pb-4 px-4 absolute top-[88px] left-0 w-full lg:hidden">
+      <div className="navbar-mobile bg-white flex-col pb-4 px-4 absolute top-[88px] left-0 w-full hidden lg:hidden">
         <a href="#" className="text-gray-600 active my-2">
           Home
         </a>

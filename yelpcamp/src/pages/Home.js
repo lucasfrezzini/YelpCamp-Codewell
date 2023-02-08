@@ -15,8 +15,8 @@ export default function Home() {
         <img className="py-12 mx-4 md:mx-8 lg:mx-24" src={logo} />
       </header>
       <picture className="lg:row-start-1 lg:row-end-3 lg:col-start-2 lg:h-screen">
-        <source media="(max-width: 1024px)" srcset={img_hero_xl} />
-        <source media="(min-width: 1025px)" srcset={img_hero} />
+        <source media="(max-width: 1024px)" srcSet={img_hero_xl} />
+        <source media="(min-width: 1025px)" srcSet={img_hero} />
         <img
           src={img_hero_xl}
           className="aspect-square object-cover md:w-full md:h-full md:aspect-auto"
