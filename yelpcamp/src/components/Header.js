@@ -2,8 +2,8 @@ import logo from "../assets/img/logo.svg";
 import icon_menu from "../assets/img/icon_hamburguerMenu.svg";
 import Button from "./Button";
 
-export default function Header(props) {
-  const { home } = props;
+export default function Header() {
+
   const handleNavbarMobile = () => {
     const navbarMobile = document.querySelector(".navbar-mobile");
     navbarMobile.classList.toggle("hidden");
@@ -12,13 +12,15 @@ export default function Header(props) {
 
   return (
     <nav
-      className={`container mx-auto flex items-center relative justify-between px-4 py-6 lg:px-0 ${
-        home ? " hidden " : ""
-      }`}
+      className="container mx-auto flex items-center relative justify-between px-4 py-6 xl:px-0"
     >
       <div className="flex items-center">
         <a href="#" className="brand ">
-          <img src={logo} className="mb-1" />
+          <img
+            src={logo}
+            alt="YelpCamp is a curated list of the best camping spots on Earth."
+            className="mb-1"
+          />
           <h2 className="sr-only">YelpCamp</h2>
         </a>
         <a href="#" className="text-gray-600 ml-5 hidden lg:block">
