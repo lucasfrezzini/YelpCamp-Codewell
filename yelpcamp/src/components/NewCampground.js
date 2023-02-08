@@ -9,10 +9,19 @@ export default function NewCampground() {
         Add New Campground
       </h1>
       <form>
-        <DashboardInput title="Campground name" placeholder="Seven Sister Waterfall" />
+        <DashboardInput
+          title="Campground name"
+          placeholder="Seven Sister Waterfall"
+        />
         <DashboardInput title="Price" type="number" placeholder="$149" />
-        <DashboardInput title="Image" placeholder="https://codeflarelimited.com/react-one-1536x864.jpg" />
-        <DashboardTextarea title="Description" placeholder="This was probably the best camp i've visited this past year, definitely recommend visiting any time soon." />
+        <DashboardInput
+          title="Image"
+          placeholder="https://codeflarelimited.com/react-one-1536x864.jpg"
+        />
+        <DashboardTextarea
+          title="Description"
+          placeholder="This was probably the best camp i've visited this past year, definitely recommend visiting any time soon."
+        />
         <Button colors width title="Add Campground" />
       </form>
     </section>

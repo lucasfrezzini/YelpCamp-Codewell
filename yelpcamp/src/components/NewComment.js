@@ -3,7 +3,9 @@ import Button from "./Button";
 export default function NewComment() {
   return (
     <section className="container max-w-2xl m-auto px-4 py-6 lg:px-0">
-      <h1 className=" text-4xl mb-6 md:text-6xl font-bold mt-10">Add New Comment</h1>
+      <h1 className=" text-4xl mb-6 md:text-6xl font-bold mt-10">
+        Add New Comment
+      </h1>
       <form>
         <label className="block">
           <p className="text-gray-700 text-lg mb-2">Description</p>

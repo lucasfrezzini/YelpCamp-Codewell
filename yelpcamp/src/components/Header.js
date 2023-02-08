@@ -3,7 +3,6 @@ import icon_menu from "../assets/img/icon_hamburguerMenu.svg";
 import Button from "./Button";
 
 export default function Header() {
-
   const handleNavbarMobile = () => {
     const navbarMobile = document.querySelector(".navbar-mobile");
     navbarMobile.classList.toggle("hidden");
@@ -11,9 +10,7 @@ export default function Header() {
   };
 
   return (
-    <nav
-      className="container mx-auto flex items-center relative justify-between px-4 py-6 xl:px-0"
-    >
+    <nav className="container mx-auto flex items-center relative justify-between px-4 py-6 xl:px-0">
       <div className="flex items-center">
         <a href="#" className="brand ">
           <img
