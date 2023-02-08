@@ -11,7 +11,7 @@ export default function Button(props) {
 
   return (
     <button
-      className={`group flex py-4 px-5 font-semibold border rounded-md ${styles}`}
+      className={`group flex tracking-wider py-4 px-5 font-semibold border rounded-md ${styles}`}
     >
       {icon && (
         <img

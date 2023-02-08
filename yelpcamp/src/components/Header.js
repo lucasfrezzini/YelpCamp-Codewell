@@ -2,14 +2,19 @@ import logo from "../assets/img/logo.svg";
 import icon_menu from "../assets/img/icon_hamburguerMenu.svg";
 import Button from "./Button";
 
-export default function Header() {
+export default function Header(props) {
+  const { home } = props;
   const handleNavbarMobile = () => {
     const navbarMobile = document.querySelector(".navbar-mobile");
     navbarMobile.classList.toggle("hidden");
   };
 
   return (
-    <nav className="container mx-auto flex items-center relative justify-between px-4 py-6 lg:px-0">
+    <nav
+      className={`container mx-auto flex items-center relative justify-between px-4 py-6 lg:px-0 ${
+        home ? " hidden " : ""
+      }`}
+    >
       <div className="flex items-center">
         <a href="#" className="brand ">
           <img src={logo} className="mb-1" />
@@ -23,10 +28,7 @@ export default function Header() {
         </a>
       </div>
       <div className="flex items-center">
-        <button
-          onClick={handleNavbarMobile}
-          className="bg-gray-200 rounded p-2"
-        >
+        <button onClick={handleNavbarMobile} className="rounded p-2 lg:hidden">
           <img src={icon_menu} />
         </button>
         <a href="#" className="text-gray-600 mx-4 hidden lg:block">
@@ -38,7 +40,7 @@ export default function Header() {
           colors
         />
       </div>
-      <div className="navbar-mobile flex flex-col bg-white px-4 absolute top-[88px] left-0 w-full lg:hidden">
+      <div className="navbar-mobile bg-white flex flex-col pb-4 px-4 absolute top-[88px] left-0 w-full lg:hidden">
         <a href="#" className="text-gray-600 active my-2">
           Home
         </a>
