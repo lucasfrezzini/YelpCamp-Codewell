@@ -19,6 +19,14 @@ export default function NewCampground() {
           <span class="text-gray-600">Price</span>
           <input type="number" class="DashboardInput" placeholder="$149" />
         </label>
+        <label class="block">
+          <span class="text-gray-600">Image</span>
+          <input
+            type="text"
+            class="DashboardInput"
+            placeholder="www.google.com/img/refactoring-ui-sidebar.png"
+          />
+        </label>
         <label className="block">
           <p className="text-gray-600 text-lg mb-2">Description</p>
           <textarea
