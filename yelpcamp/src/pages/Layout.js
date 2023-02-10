@@ -4,16 +4,22 @@ import Footer from "../components/Footer";
 
 export default function Layout() {
   const { pathname } = useLocation();
-
+  const routesDifferentLayout = ["/", "/dashboard/new", "/dashboard/login"];
+  const differentLayout = routesDifferentLayout.includes(pathname);
+  
   return (
     <div
       className={
-        pathname !== "/" && "grid grid-rows-[auto_1fr_auto] min-h-screen w-full"
+        !differentLayout
+          ? "grid grid-rows-[auto_1fr_auto] min-h-screen w-full"
+          : ""
       }
     >
-      {pathname !== "/" && <Header />}
+      {!differentLayout && <Header />}
+
       <Outlet />
-      {pathname !== "/" && <Footer />}
+
+      {!differentLayout && <Footer />}
     </div>
   );
 }

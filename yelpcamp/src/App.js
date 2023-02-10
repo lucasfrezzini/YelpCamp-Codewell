@@ -3,20 +3,21 @@ import "./App.css";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
-import NewComment from "./components/NewComment";
-import NewCampground from "./components/NewCampground";
-import SignIn from "./components/SignIn";
+import NewComment from "./pages/NewComment";
+import NewCampground from "./pages/NewCampground";
+import Login from "./pages/Login";
+import NewAccount from "./pages/NewAccount";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="login" />
         <Route path="dashboard/*" element={<Dashboard />}>
           <Route path="new-comment" element={<NewComment />} />
           <Route path="new-campground" element={<NewCampground />} />
-          <Route path="sign-in" element={<SignIn />} />
+          <Route path="login" element={<Login />} />
+          <Route path="new" element={<NewAccount />} />
         </Route>
       </Route>
     </Routes>

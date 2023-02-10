@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <section className="bg-gray-200 min-h-screen lg:grid lg:grid-rows-[88px_minmax(0px,80vh)] lg:grid-cols-2">
       <header className="">
-        <img className="py-12 mx-4 md:mx-8 lg:mx-24" src={logo} />
+        <img className="py-12 mx-4 md:mx-8 lg:mx-40" src={logo} />
       </header>
       <picture className="lg:row-start-1 lg:row-end-3 lg:col-start-2 lg:h-screen">
         <source media="(max-width: 1024px)" srcSet={img_hero_xl} />
@@ -23,7 +23,7 @@ export default function Home() {
           alt="Campground views from the sky"
         />
       </picture>
-      <div className="mx-4 md:mx-8 lg:m-24  lg:flex lg:justify-center lg:flex-col">
+      <div className="mx-4 md:mx-8 lg:m-40  lg:flex lg:justify-center lg:flex-col">
         <h1 className=" text-4xl md:text-6xl font-bold mt-10">
           Explore the best camps on Earth.
         </h1>
