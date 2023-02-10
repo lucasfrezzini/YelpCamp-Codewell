@@ -6,7 +6,7 @@ import icon_arrowLeft from "../assets/img/icon_arrowLeft.svg";
 
 export default function Login() {
   return (
-    <section className="grid grid-rows-[auto_1fr_auto] lg:px-0 min-h-screenlg:grid-rows-[88px_minmax(0px,80vh)] lg:grid-cols-2">
+    <main className="grid grid-rows-[auto_1fr_auto] lg:px-0 min-h-screenlg:grid-rows-[88px_minmax(0px,80vh)] lg:grid-cols-2">
       <header className="flex justify-between items-center mx-4 md:mx-8 lg:mx-40">
         <img className="py-12" src={logo} />
         <a href="#" className="flex group">
@@ -60,6 +60,6 @@ export default function Login() {
           </h4>
         </div>
       </div>
-    </section>
+    </main>
   );
 }

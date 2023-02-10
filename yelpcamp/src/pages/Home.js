@@ -10,7 +10,7 @@ import brand_plumguide from "../assets/img/brand_plumguide.svg";
 
 export default function Home() {
   return (
-    <section className="bg-gray-200 min-h-screen lg:grid lg:grid-rows-[88px_minmax(0px,80vh)] lg:grid-cols-2">
+    <main className="bg-gray-200 min-h-screen lg:grid lg:grid-rows-[88px_minmax(0px,80vh)] lg:grid-cols-2">
       <header className="">
         <img className="py-12 mx-4 md:mx-8 lg:mx-40" src={logo} />
       </header>
@@ -59,6 +59,6 @@ export default function Home() {
           </a>
         </div>
       </div>
-    </section>
+    </main>
   );
 }

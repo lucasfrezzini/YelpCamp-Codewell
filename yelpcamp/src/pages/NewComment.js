@@ -2,7 +2,7 @@ import Button from "../components/Button";
 
 export default function NewComment() {
   return (
-    <section className="container max-w-2xl m-auto px-4 py-6 lg:px-0">
+    <main className="container max-w-2xl m-auto px-4 py-6 lg:px-0">
       <form>
         <h1 className=" text-4xl mb-6 md:text-6xl font-bold mt-10">
           Add New Comment
@@ -17,6 +17,6 @@ export default function NewComment() {
         </label>
         <Button colors width title="Add New Comment" />
       </form>
-    </section>
+    </main>
   );
 }

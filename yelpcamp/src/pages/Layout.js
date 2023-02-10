@@ -6,7 +6,7 @@ export default function Layout() {
   const { pathname } = useLocation();
   const routesDifferentLayout = ["/", "/dashboard/new", "/dashboard/login"];
   const differentLayout = routesDifferentLayout.includes(pathname);
-  
+
   return (
     <div
       className={
