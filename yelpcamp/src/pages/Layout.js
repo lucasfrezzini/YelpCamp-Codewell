@@ -1,6 +1,7 @@
 import { Outlet, useLocation } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import TopAlert from '../components/TopAlert';
 
 export default function Layout() {
   const { pathname } = useLocation();
@@ -15,6 +16,7 @@ export default function Layout() {
           : ""
       }
     >
+      {/* {pathname === "/campgrounds" && <TopAlert />} */}
       {!differentLayout && <Header />}
 
       <Outlet />
