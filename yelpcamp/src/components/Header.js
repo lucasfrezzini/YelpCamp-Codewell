@@ -43,7 +43,7 @@ export default function Header() {
           colors
         />
       </div>
-      <div className="navbar-mobile bg-white flex-col pb-4 px-4 absolute top-[88px] left-0 w-full hidden lg:hidden">
+      <div className="navbar-mobile bg-white flex-col pb-4 px-4 absolute z-50 top-[88px] left-0 w-full hidden lg:hidden">
         <a href="#" className="text-gray-600 active my-2">
           Home
         </a>
